@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokeApi.MainPage">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="White" Offset="0.4" />
+            <GradientStop Color="Red" Offset="1.6" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="15">
+            <Image
+                Source="images.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Logo do PokeAPI" />
+
+            <Label
+                Text="Poke API v1.2"
+                FontFamily="Inter"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                FontAttributes="Bold"/>
+
+            <Label
+                Text="Bem vindo ao Poke API - Uma ferramenta criada para a consulta de Pokemons"
+                FontFamily="Inter"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Descrição básica da ferramenta"
+                FontSize="Medium"/>
+
+            <Label
+                Text="Digite o nome do Pokemon:"
+                FontFamily="Inter"
+                FontAttributes="Bold"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Descrição básica da ferramenta"
+                FontSize="Medium"/>
+
+            <Entry Text=""
+                   Placeholder="Nome do pokemon"
+                   MaximumWidthRequest="500"
+                   TextColor="black" 
+                   BackgroundColor="Black"
+                   PlaceholderColor="White"/>
+
+            <Button
+                    x:Name="CounterBtn"
+                    Text="Consultar Pokemon"
+                    FontFamily="Inter"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Fill"
+                    MaximumWidthRequest="300"/>
+
+            <!--Nome-->
+            <HorizontalStackLayout>
+                <Label 
+                    Text="Nome: "
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+                <Label 
+                    Text="-"
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+
+            <!--Movimento-->
+            <HorizontalStackLayout>
+                <Label
+                    Text="Movimento: "
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+                <Label 
+                    Text="-"
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+
+            <!--Habilidades-->
+            <HorizontalStackLayout>
+                <Label 
+                    Text="Habilidades: "
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+                <Label
+                    Text="-"
+                    FontFamily="Interr"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="Fill"
+                    Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+            
+            <!--Pokedex-->
+            <HorizontalStackLayout>
+                <Label 
+                     Text="Pokedex: "
+                     FontFamily="Interr"
+                     FontAttributes="Bold"
+                     FontSize="20"
+                     HorizontalOptions="Fill"
+                     Margin="60, 0, 0, 0 "/>
+                <Label 
+                     Text="-"
+                     FontFamily="Interr"
+                     FontAttributes="Bold"
+                     FontSize="20"
+                     HorizontalOptions="Fill"
+                     Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+
+            <!--Tipos-->
+            <HorizontalStackLayout>
+                <Label 
+                      Text="Tipos: "
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+                <Label 
+                      Text="-"
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+
+            <!--Unid-->
+            <HorizontalStackLayout>
+                <Label 
+                      Text="Unid: "
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+                <Label 
+                      Text="-"
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+            
+            <!--Grupo de Ovos-->
+            <HorizontalStackLayout>
+                <Label 
+                      Text="Grupo de Ovos: "
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+                <Label 
+                      Text="-"
+                      FontFamily="Interr"
+                      FontAttributes="Bold"
+                      FontSize="20"
+                      HorizontalOptions="Fill"
+                      Margin="60, 0, 0, 0 "/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
